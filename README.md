@@ -44,6 +44,8 @@ view of what each user process is doing.
 
 ### Setting up build
 
+- create build directory
+- make sure cmake installed (sudo apt-get install cmake on Debian / Ubuntu)
 - navigate to /build
 - run 'cmake ..' to create build cache
 - run 'cmake --build .' whenever you need to compile
