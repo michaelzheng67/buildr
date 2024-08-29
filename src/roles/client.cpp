@@ -1,14 +1,19 @@
-#include "include/client.hpp"
+#include "roles/client.hpp"
 
 // Namespace implementation
 namespace client {
 
-    // Constructor
-    client::client() {
+    client::client(std::string name) : name(name) {}
+
+    client::~client() {
+    }
+    
+    std::string client::get_name() const {
+        return this->name;
     }
 
-    // Destructor
-    client::~client() {
+    void client::set_name(std::string name) {
+        this->name = name;
     }
 
 }
